@@ -43,10 +43,13 @@ body{
 .landing__img{
     padding: 2.3rem;
     padding-top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .landing__ilustration{
     width: 100%;
+    max-width: 886px;
 }
 
 .landing__texts{
@@ -98,38 +101,38 @@ body{
     gap: 15px;
 }
 
-i{
+.footer__ico{
     width: 20px;
     height: 20px;
     color: #ffffff;
     padding: 1rem;
     border: 2px solid #ffffff;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-i:hover{
+.footer__ico:hover{
     cursor: pointer;
     border: 2px solid var(--Soft-Magenta);
     color: var(--Soft-Magenta);
 }
 
-.fa-brands{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 @media (min-width:927px){
     body{
         background-image: url('../images/bg-desktop.svg');
-        min-height: 100vh;
+    }
+    .header{
+        margin-bottom: 2.4rem;
     }
     .header__logo{
         width: 200px;
     }
     .landing{
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     .landing{
         height: auto;
@@ -138,12 +141,15 @@ i:hover{
         width: 60%;
         height: auto;
         margin-bottom: 0;
-        padding-bottom: 0;
+        padding: 0;
+    }
+    .landing__ilustration{
+        width: 85%;
     }
     .landing__texts{
         width: 40%;
         height: auto;
-        padding: 3.5rem 3.5rem 0 0;
+        padding: 4.5rem 3.5rem 0 0;
         text-align: start;
     }
     .landing__title{
@@ -154,6 +160,6 @@ i:hover{
     }
     .footer{
         justify-content: end;
-        padding: 2rem 3rem;
+        padding: 2rem 4.5rem;
     }
 }
